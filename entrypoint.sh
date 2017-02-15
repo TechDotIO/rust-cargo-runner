@@ -9,4 +9,4 @@ cp -a /project/answer/* /project/target/source/
 
 cd /project/target/source
 
-cargo build && cargo test --lib $@
+cargo build -q && cargo test -q --lib $@
