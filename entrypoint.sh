@@ -1,8 +1,7 @@
 #!/bin/bash
 
-# Copy cargo registry
-[ -d /project/target/.cargo ] && \
-	rsync -a /project/target/.cargo/ ~/.cargo
+# Needed for registry in ~/.cargo
+HOME=/project/target
 
 # Copy answer code
 cp -a /project/answer/* /project/target/source/
