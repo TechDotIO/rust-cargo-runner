@@ -1,11 +1,8 @@
 FROM codingame/rust:1.15
 
-RUN apt-get update && apt-get install -y --no-install-recommends \
-		rsync \
-	&& rm -rf /var/lib/apt/lists/*
-
+COPY build.sh      /project/build
 COPY entrypoint.sh /
 
-RUN chmod +x entrypoint.sh
+RUN chmod +x /project/build entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
