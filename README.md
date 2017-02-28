@@ -1,6 +1,8 @@
 # rust-cargo-runner
 
-This is a Rust 1.15 runner that executes tests thanks to the `cargo test` command.
+This is a Rust 1.15 runner that:
+- builds the project once using `cargo build` (i.e. fetches dependencies and compiles initial source files)
+- executes tests thanks to the `cargo test` command.
 
 ## How to Use
 
@@ -9,7 +11,7 @@ In order to use this runner for your project, edit the `codingame.yml` file and 
 ```yaml
     runner:
       name: codingame/rust-cargo-runner
-      version: 1.15
+      version: 1.0-rust-1.15
 ```
 
 ## Example
@@ -46,9 +48,3 @@ In the markdown file, the unit test can be called using:
 ```markdown
 @[Test uppercase]({"stubs":["uppercase.rs"], "command":"string_tests::test_to_upper"})
 ```
-
-## Compatibility
-
-If a Cargo project is detected, the runner will use it to execute the project.
-
-Compatible with `rust-cargo-builder`.
