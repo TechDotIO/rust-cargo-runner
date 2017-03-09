@@ -11,7 +11,7 @@ In order to use this runner for your project, edit the `codingame.yml` file and 
 ```yaml
     runner:
       name: codingame/rust-cargo-runner
-      version: 1.0-rust-1.15
+      version: 1.0.0-rust-1.15
 ```
 
 ## Example
