@@ -16,6 +16,18 @@ In order to use this runner for your project, edit the `codingame.yml` file and 
 
 ## Example
 
+Given the following project:
+
+```
+.
+├── Cargo.toml
+├── codingame.yml
+└── src
+    ├── lib.rs
+    ├── string_tests.rs
+    └── uppercase.rs
+```
+
 In this example, the user is asked to write the function `to_upper` (file `uppercase.rs`):
 
 ```rust
