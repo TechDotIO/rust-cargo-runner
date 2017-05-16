@@ -1,4 +1,4 @@
-FROM codingame/rust:1.15
+FROM techio/rust:1.15
 
 COPY build.sh      /project/build
 COPY entrypoint.sh /
