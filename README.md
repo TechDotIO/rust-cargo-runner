@@ -9,9 +9,7 @@ This is a Rust 1.15 runner that:
 In order to use this runner for your project, edit the `codingame.yml` file and add the following lines to your project:
 
 ```yaml
-    runner:
-      name: codingame/rust-cargo-runner
-      version: 1.0.0-rust-1.15
+    runner: techio/rust-cargo-runner:1.0.0-rust-1.15
 ```
 
 ## Example
