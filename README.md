@@ -1,3 +1,6 @@
+Warning: this runner has been **deprecated** in favor of the `rust` image, which is more flexible and generic.
+See the https://github.com/CodinGame/rust repository for more details.
+
 # rust-cargo-runner
 
 This is a Rust 1.15 runner that:
