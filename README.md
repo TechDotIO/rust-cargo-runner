@@ -1,5 +1,5 @@
 Warning: this runner has been **deprecated** in favor of the `rust` image, which is more flexible and generic.
-See the https://github.com/CodinGame/rust repository for more details.
+See the https://github.com/TechDotIO/rust repository for more details.
 
 # rust-cargo-runner
 
@@ -9,7 +9,7 @@ This is a Rust 1.15 runner that:
 
 ## How to Use
 
-In order to use this runner for your project, edit the `codingame.yml` file and add the following lines to your project:
+In order to use this runner for your project, edit the `techio.yml` file and add the following lines to your project:
 
 ```yaml
     runner: techio/rust-cargo-runner:1.0.0-rust-1.15
@@ -22,7 +22,7 @@ Given the following project:
 ```
 .
 ├── Cargo.toml
-├── codingame.yml
+├── techio.yml
 └── src
     ├── lib.rs
     ├── string_tests.rs
